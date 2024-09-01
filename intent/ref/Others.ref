@@ -1,0 +1,42 @@
+{
+    "language": "zh-tw",
+    "type": "advance",
+    "version": {
+        "atk": "v270",
+        "intent": "1.0"
+    },
+    "user_defined": {
+        "瑞士法朗": [
+            ""
+        ]
+    },
+    "utterance": {
+        "6000美金可以換多少元日幣": {
+            "id": "15f47a05-d521-4b5c-808f-c7bcfafeb0a1",
+            "pos": "<KNOWLEDGE_currency>6000美金</KNOWLEDGE_currency><MODAL>可以</MODAL><ACTION_verb>換</ACTION_verb><CLAUSE_HowQ>多少</CLAUSE_HowQ><ENTITY_noun>元</ENTITY_noun><ENTITY_noun>日幣</ENTITY_noun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(換|更換|換了|買|換到|轉換|換回|換成|有換|拆開|換購)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<KNOWLEDGE_currency>(\\w+)</KNOWLEDGE_currency>(<MODAL>[^<]+</MODAL>)?<(ACTION_verb|VerbP)>(兌?換|買)</(ACTION_verb|VerbP)>(<CLAUSE_HowQ>[^<]+</CLAUSE_HowQ>)?(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[元塊]</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(\\w+)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "6000元美金可以換多少元日幣": {
+            "id": "c5edf183-dfe2-4cc4-bea1-6b53168969ae",
+            "pos": "<KNOWLEDGE_currency>6000元</KNOWLEDGE_currency><ENTITY_noun>美金</ENTITY_noun><MODAL>可以</MODAL><ACTION_verb>換</ACTION_verb><CLAUSE_HowQ>多少</CLAUSE_HowQ><ENTITY_noun>元</ENTITY_noun><ENTITY_noun>日幣</ENTITY_noun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(換|更換|換了|買|換到|轉換|換回|換成|有換|拆開|換購)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<KNOWLEDGE_currency>(\\w+[元塊])</KNOWLEDGE_currency><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(\\w+)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<MODAL>[^<]+</MODAL>)?<(ACTION_verb|VerbP)>(兌?換|買)</(ACTION_verb|VerbP)>(<CLAUSE_HowQ>[^<]+</CLAUSE_HowQ>)?(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[元塊]</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(\\w+)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "60000塊瑞士法郎可以換多少元美金": {
+            "id": "5dff59df-1a4a-438d-8e45-6f03ed05a232",
+            "pos": "<ENTITY_classifier>60000塊</ENTITY_classifier><ENTITY_noun>瑞士法郎</ENTITY_noun><MODAL>可以</MODAL><ACTION_verb>換</ACTION_verb><CLAUSE_HowQ>多少</CLAUSE_HowQ><ENTITY_noun>元</ENTITY_noun><ENTITY_noun>美金</ENTITY_noun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(換|更換|換了|買|換到|轉換|換回|換成|有換|拆開|換購)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<ENTITY_classifier>([^<]+塊)</ENTITY_classifier><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(瑞士法郎)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<MODAL>[^<]+</MODAL>)?<(ACTION_verb|VerbP)>(兌?換|買)</(ACTION_verb|VerbP)>(<CLAUSE_HowQ>[^<]+</CLAUSE_HowQ>)?(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[元塊]</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(\\w+)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        }
+    },
+    "alias": {},
+    "prompt": {},
+    "document": []
+}

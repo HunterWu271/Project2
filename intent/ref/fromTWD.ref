@@ -1,0 +1,50 @@
+{
+    "language": "zh-tw",
+    "type": "advance",
+    "version": {
+        "atk": "v270",
+        "intent": "1.0"
+    },
+    "user_defined": {
+        "瑞士法朗": [
+            ""
+        ]
+    },
+    "utterance": {
+        "30000台幣可以換多少元美金": {
+            "id": "c376fd12-fdda-4893-8195-4ab2bceea53d",
+            "pos": "<KNOWLEDGE_currency>30000台幣</KNOWLEDGE_currency><MODAL>可以</MODAL><ACTION_verb>換</ACTION_verb><CLAUSE_HowQ>多少</CLAUSE_HowQ><ENTITY_noun>元</ENTITY_noun><ENTITY_noun>美金</ENTITY_noun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(換|更換|換了|買|換到|轉換|換回|換成|有換|拆開|換購)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<KNOWLEDGE_currency>([^<]+台幣)</KNOWLEDGE_currency>(<MODAL>[^<]+</MODAL>)?<(ACTION_verb|VerbP)>(兌?換|買)</(ACTION_verb|VerbP)>(<CLAUSE_HowQ>[^<]+</CLAUSE_HowQ>)?(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov|classifier))>[元塊]</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|classifier))>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(\\w+)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "30000台幣可以換美金多少元": {
+            "id": "36d5d279-922b-410f-a0bd-0a9ca09249d2",
+            "pos": "<KNOWLEDGE_currency>30000台幣</KNOWLEDGE_currency><MODAL>可以</MODAL><ACTION_verb>換</ACTION_verb><ENTITY_noun>美金</ENTITY_noun><CLAUSE_HowQ>多少</CLAUSE_HowQ><ENTITY_noun>元</ENTITY_noun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(換|更換|換了|買|換到|轉換|換回|換成|有換|拆開|換購)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<KNOWLEDGE_currency>(\\w+台幣)</KNOWLEDGE_currency>(<MODAL>[^<]+</MODAL>)?<(ACTION_verb|VerbP)>(兌?換|買)</(ACTION_verb|VerbP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(\\w+)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><CLAUSE_HowQ>[^<]+</CLAUSE_HowQ><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[元塊]</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "30000元台幣可以換多少元美元": {
+            "id": "782c938a-45b0-4aec-ac4c-711c1c1448cd",
+            "pos": "<KNOWLEDGE_currency>30000元</KNOWLEDGE_currency><ENTITY_noun>台幣</ENTITY_noun><MODAL>可以</MODAL><ACTION_verb>換</ACTION_verb><CLAUSE_HowQ>多少</CLAUSE_HowQ><ENTITY_noun>元</ENTITY_noun><ENTITY_noun>美元</ENTITY_noun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(換|更換|換了|買|換到|轉換|換回|換成|有換|拆開|換購)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<KNOWLEDGE_currency>(\\w+[元塊])</KNOWLEDGE_currency><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(台幣)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<MODAL>[^<]+</MODAL>)?<(ACTION_verb|VerbP)>(兌?換|買)</(ACTION_verb|VerbP)>(<CLAUSE_HowQ>[^<]+</CLAUSE_HowQ>)?(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov|classifier))>[元塊]</(UserDefined|ENTITY_(nounHead|nouny|noun|oov|classifier))>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(\\w+)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "3000塊台幣可以換新加坡幣多少元": {
+            "id": "b7dc6a27-2c87-4032-beb4-a680d1daa984",
+            "pos": "<KNOWLEDGE_currency>3000塊</KNOWLEDGE_currency><ENTITY_noun>台幣</ENTITY_noun><MODAL>可以</MODAL><ACTION_verb>換</ACTION_verb><ENTITY_noun>新加坡幣</ENTITY_noun><CLAUSE_HowQ>多少</CLAUSE_HowQ><ENTITY_noun>元</ENTITY_noun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(換|更換|換了|買|換到|轉換|換回|換成|有換|拆開|換購)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<KNOWLEDGE_currency>(\\w+塊)</KNOWLEDGE_currency><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(台幣)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<MODAL>[^<]+</MODAL>)?<(ACTION_verb|VerbP)>(兌?換|買)</(ACTION_verb|VerbP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(\\w+)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><CLAUSE_HowQ>[^<]+</CLAUSE_HowQ><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>[元錢]</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        }
+    },
+    "alias": {},
+    "prompt": {},
+    "document": []
+}
